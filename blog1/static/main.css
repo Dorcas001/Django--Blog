@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(to right, #d2e0dbb6, #203a45, #2c5364);
+    font-family: 'poppins', sans-serif;
+    padding-top: 60px;
+}
+#form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: rgba(22, 193, 47, 0.492) ;
+    border-radius: 4px;
+    font-size: 12px;
+}
+#form h2 {
+    color: white;
+    text-align: center;
+}
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgba(3, 97, 141, 0.825);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+.input-control label {
+    font-size: 15px;
+    color: whitesmoke;
+}
+.input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 90%;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.success input {
+  border-color: #01462878;
+}
+.input-control.error input {
+    border-color: #dd0404;
+  }
+.input-control .error {
+   color: #dd0404;
+   font-size: 9px;
+   height: 13px;
+}
+.box{
+    width: 450px;
+    background: rgba(5, 121, 115, 0.977);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: #f5f4f4;
+    font-family: poppins sans-serif;
+}
+.box-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p {
+    text-align: justify;
+    letter-spacing: 1px;
+}

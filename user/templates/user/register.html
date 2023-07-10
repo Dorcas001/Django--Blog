@@ -1,0 +1,8 @@
+{% extends 'blog1/main.html' %}
+{% block content %}
+<form method="POST" class="form-group">
+	{% csrf_token %}
+	{{ form }}
+    <button type="submit" class="btn">Signup</button>
+</form>
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends 'blog1/main.html' %}
+{% block content %}
+<div class="box">
+    <img src="{{user.profile.image.url}}" alt="" class="box-img">
+    <h1> Gal Code</h1>
+    <h1>Web Developer</h1>
+    <p>I'm a self taught engineer,coding has never been that easy considering i train, teach myself.i really work hard for this .hope something good will come out of this.sometimes i feel dicouraged ,exsteusted but i have to push for my future.but in all this is the best thing that have done for myself. the only thing i need is a platform to show case my skills and to learn.lord help me. </p>
+    <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+    </ul>
+    <button type="submit" class="btn"><a href="{% url 'user-update-profile' %}">Update </a></button>
+
+</div>
+{% endblock content %}

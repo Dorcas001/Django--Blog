@@ -1,0 +1,22 @@
+{% extends 'blog1/main.html'%}
+
+{% block content %}
+
+    {% for posts in post %}
+    <article class="media content-section">
+        <img src="{{posts.author.profile.image.url}}" alt="" class="img-thumbnail">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a href="#" class="mr-2">{{posts.author}}</a>
+                <small class="text-muted">{{posts.date_posted}}</small>
+            </div>
+            <h2><a href="{% url 'blog-detail' posts.id %}" class="article-title">{{posts.title}}</a></h2>
+            <p class="article-content">{{posts.content}}</p>
+          
+        </div>
+        <br>
+    </article>
+    
+    {% endfor %}
+
+{% endblock content %}
